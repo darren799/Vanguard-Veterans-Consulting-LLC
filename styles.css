@@ -19,10 +19,6 @@
   padding: 0;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-family: "Inter", sans-serif;
   background: var(--light);
@@ -78,15 +74,14 @@ a {
 }
 
 .site-logo {
-  width: 55px !important;
-  height: 55px !important;
-  object-fit: contain !important;
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
 }
 
 .logo span {
-  font-size: 1rem;
   color: var(--white);
-  font-family: "Oswald", sans-serif;
+  font-size: 1rem;
 }
 
 /* NAV */
@@ -110,7 +105,6 @@ nav a:hover {
 
 .btn,
 .btn-primary {
-  display: inline-block;
   background: var(--red);
   color: var(--white);
   padding: 11px 17px;
@@ -144,32 +138,49 @@ nav a:hover {
   position: absolute;
   inset: 0;
   background: rgba(6, 20, 35, 0.85);
-  z-index: 1;
 }
 
 .hero-content {
   position: relative;
   z-index: 2;
-  max-width: 720px;
+  max-width: 700px;
 }
 
 .hero h2 {
-  font-size: clamp(2.6rem, 6vw, 4rem);
+  font-size: clamp(2.5rem, 5vw, 4rem);
   margin-bottom: 15px;
 }
 
 .hero p {
-  max-width: 550px;
   margin-bottom: 20px;
 }
 
-/* VETERAN BADGE (TEXT ONLY) */
+/* PAGE HEADER (OTHER PAGES) */
+
+.page-header {
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+  padding: 90px 0;
+}
+
+.page-header h2 {
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  margin-bottom: 15px;
+}
+
+.page-header p {
+  max-width: 700px;
+  margin: auto;
+  color: #d7dce2;
+}
+
+/* VETERAN BADGE */
 
 .veteran-badge {
   color: var(--gold);
   font-weight: 700;
-  letter-spacing: 0.05em;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 /* FEATURES */
@@ -193,9 +204,9 @@ nav a:hover {
 /* SERVICES */
 
 .services {
+  padding: 80px 0;
   background: var(--navy);
   color: var(--white);
-  padding: 80px 0;
 }
 
 .services h2 {
@@ -302,6 +313,14 @@ nav a:hover {
   font-weight: bold;
 }
 
+/* DISCLAIMER */
+
+.disclaimer {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--gray);
+}
+
 /* FOOTER */
 
 .footer {
@@ -313,7 +332,6 @@ nav a:hover {
 
 .footer-logo {
   width: 45px;
-  height: auto;
   margin-bottom: 10px;
 }
 
